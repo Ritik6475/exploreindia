@@ -1,0 +1,903 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.slideshow {
+    width: 100%;
+    height: calc(100% - 60px); /* Adjust for logo and nav height */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.logo img {
+    width: 80px; /* Adjust logo size as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size as needed */
+}
+.slides img {
+    width: 100%;
+    max-height: 600px; /* Adjust the maximum height as needed */
+    object-fit: cover;
+}
+
+/* 
+.centertheimage{
+
+    background-color: black;
+    height: 600px;
+    background: url();
+}
+
+
+.centertheimage img{
+
+height: 400px;
+width: 400px;
+margin-top: 20px;
+margin-left: 300px;
+margin-right: 300px;
+ border-radius: 20px;
+
+} */
+
+.blurry-background {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Adjust height as needed */
+    background-size: cover;
+    filter: blur(5px); /* Adjust blur strength as needed */
+    align-items: center;
+    animation: changeBackground 24s infinite; /* 4s per image, infinite loop */
+}
+
+
+    @keyframes changeBackground {
+        0% { background-image: url(https://media.istockphoto.com/id/520838006/photo/famous-temples-of-khajuraho.jpg?s=2048x2048&w=is&k=20&c=cKTsaxftiNzKDzV1GD5_lmztb27PBFd5Nct8IG4TqSg=); }
+        25% { background-image: url(https://media.istockphoto.com/id/1703668636/photo/mandu-indore-mp-india.jpg?s=2048x2048&w=is&k=20&c=tbUHF0YOFWecKRrqc3ndk-U56-o4c1GtPpiUXVJH-eQ=); }
+        50% { background-image: url(https://media.istockphoto.com/id/920590984/photo/omkareshwar-cityscape-at-dusk-india-sacred-hindu-temple-holy-narmada-river-boats-floating.jpg?s=2048x2048&w=is&k=20&c=QZn3AB3dekMg1IR6eBr-wazDx2iTeV1-1umLJYTI-xo=); }
+        75% { background-image: url(https://media.istockphoto.com/id/1182489846/photo/gwalior-fort-madhya-pradesh-india.jpg?s=2048x2048&w=is&k=20&c=yX2R0Nd7fJZ06mPSFoqRaRqvs3psLVOhtUvRvN8rB6Y=); }
+        100% { background-image: url(https://images.unsplash.com/photo-1699953792366-2bba114dcd5e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); }
+    
+    }
+
+
+    .clear-image {
+
+        margin-top: 750px;
+        width: 900px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    
+    }
+
+    .clear-image img {
+        display: block;
+        width: 100%; /* Adjust image width to cover the container */
+        height: 500px;
+        border-radius: 10px; /* Add border radius for rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow for better contrast */
+        animation: changeContent 24s infinite;
+    }
+
+
+    @keyframes changeimg {
+
+        0% { background-image: url(https://media.istockphoto.com/id/520838006/photo/famous-temples-of-khajuraho.jpg?s=2048x2048&w=is&k=20&c=cKTsaxftiNzKDzV1GD5_lmztb27PBFd5Nct8IG4TqSg=); }
+        25% { background-image: url(https://media.istockphoto.com/id/1703668636/photo/mandu-indore-mp-india.jpg?s=2048x2048&w=is&k=20&c=tbUHF0YOFWecKRrqc3ndk-U56-o4c1GtPpiUXVJH-eQ=); }
+        50% { background-image: url(https://media.istockphoto.com/id/920590984/photo/omkareshwar-cityscape-at-dusk-india-sacred-hindu-temple-holy-narmada-river-boats-floating.jpg?s=2048x2048&w=is&k=20&c=QZn3AB3dekMg1IR6eBr-wazDx2iTeV1-1umLJYTI-xo=); }
+        75% { background-image: url(https://media.istockphoto.com/id/1182489846/photo/gwalior-fort-madhya-pradesh-india.jpg?s=2048x2048&w=is&k=20&c=yX2R0Nd7fJZ06mPSFoqRaRqvs3psLVOhtUvRvN8rB6Y=); }
+        100% { background-image: url(https://images.unsplash.com/photo-1699953792366-2bba114dcd5e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); }
+    }
+
+
+    @keyframes changeContent {
+        0% {
+            content: url(https://media.istockphoto.com/id/520838006/photo/famous-temples-of-khajuraho.jpg?s=2048x2048&w=is&k=20&c=cKTsaxftiNzKDzV1GD5_lmztb27PBFd5Nct8IG4TqSg=); /* Initial image URL */
+        }
+        25% {
+            content: url(https://media.istockphoto.com/id/1703668636/photo/mandu-indore-mp-india.jpg?s=2048x2048&w=is&k=20&c=tbUHF0YOFWecKRrqc3ndk-U56-o4c1GtPpiUXVJH-eQ=); /* Second image URL */
+        }
+        50% {
+            content: url(https://media.istockphoto.com/id/920590984/photo/omkareshwar-cityscape-at-dusk-india-sacred-hindu-temple-holy-narmada-river-boats-floating.jpg?s=2048x2048&w=is&k=20&c=QZn3AB3dekMg1IR6eBr-wazDx2iTeV1-1umLJYTI-xo=); /* Third image URL */
+        }
+        75% {
+            content: url(https://media.istockphoto.com/id/1182489846/photo/gwalior-fort-madhya-pradesh-india.jpg?s=2048x2048&w=is&k=20&c=yX2R0Nd7fJZ06mPSFoqRaRqvs3psLVOhtUvRvN8rB6Y=); /* Fourth image URL */
+        }
+        100% {
+            content: url(https://images.unsplash.com/photo-1699953792366-2bba114dcd5e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); /* Fifth image URL */
+        }
+    }
+    
+
+
+    
+    @keyframes changeText {
+        0% {
+            opacity: 1;
+        }
+        20% {
+            opacity: 1;
+        }
+        25% {
+            content: "Mandav";
+            opacity: 1;
+        }
+        45% {
+            opacity: 1;
+        }
+        50% {
+            content: "Omkareshwar";
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        75% {
+            content: "Gwalior fort";
+            opacity: 1;
+        }
+        95% {
+            opacity: 1;
+        }
+        100% {
+            content: "Pitra parvat";
+            opacity: 1;
+        }
+    }
+    
+    @keyframes changeDescription {
+        0% {
+            opacity: 1;
+        }
+        20% {
+            opacity: 1;
+        }
+        25% {
+            content: "Mandav Dhar";
+            opacity: 1;
+        }
+        45% {
+            opacity: 1;
+        }
+        50% {
+            content: "Omkareshwar";
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        75% {
+            content: "Gwalior";
+            opacity: 1;
+        }
+        95% {
+            opacity: 1;
+        }
+        100% {
+            content: "Indore";
+            opacity: 1;
+        }
+    }
+    
+    /* Apply animation to the h2 */
+    #place::before {
+        animation: changeText 24s infinite; /* Repeat every 6 seconds (4 sets of text in 24 seconds) */
+        content: "khajuraho";
+    }
+    
+    /* Apply animation to the p */
+    #placedescription::before {
+        animation: changeDescription 24s infinite; /* Repeat every 6 seconds (4 sets of text in 24 seconds) */
+        content: "khajuraho";
+    }
+    
+
+
+
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: black;
+        color: white;
+    }
+
+    .box {
+
+        width: 50%;
+        padding: 20px;
+        background-color: black;
+        color: white;
+
+        border-radius: 5px;
+        margin: 0 10px;
+        box-shadow: 0 4px 8px rgb(0, 0, 0);
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    .box:hover {
+        transform: translateY(-5px);
+    }
+    .box img {
+        margin-left: 140px;
+        width: 60%;
+        height: 380px;
+        border-radius: 10px;
+        animation: foodchangeContent 24s infinite;
+    
+
+    }
+    .box-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: white;
+        
+    }
+    .box-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: white;
+
+    }
+    .box-description {
+        font-size: 16px;
+
+        color: white;
+
+        line-height: 1.5;
+    }
+
+
+
+
+
+
+
+    
+    .box1 {
+
+        width: 50%;
+        padding: 20px;
+        background-color: black;
+        color: white;
+
+        border-radius: 5px;
+        margin: 0 10px;
+        box-shadow: 0 4px 8px rgb(0, 0, 0);
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    .box1:hover {
+        transform: translateY(-5px);
+    }
+
+    .box1 img {
+        margin-left: 140px;
+        width: 60%;
+        height: 380px;
+        border-radius: 10px;
+        animation: HCchangeContent 24s infinite;
+    
+    }
+    
+    
+    .box1-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: white;
+        
+    }
+    .box1-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: white;
+
+    }
+    .box1-description {
+        font-size: 16px;
+
+        color: white;
+
+        line-height: 1.5;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #hcnameid::before {
+        animation: HCchangeText 24s infinite; /* Repeat every 6 seconds (4 sets of text in 24 seconds) */
+        content: "Bamboo and Cane Crafts";
+    }
+    
+    /* Apply animation to the p */
+    #hcdesid::before {
+        animation: HCchangeDescription 24s infinite; /* Repeat every 6 seconds (4 sets of text in 24 seconds) */
+        content: "Bamboo and Cane Crafts"
+    }
+    
+
+    #foodnameid::before {
+        animation: foodchangeText 24s infinite; /* Repeat every 6 seconds (4 sets of text in 24 seconds) */
+        content: "Dalbati";
+    }
+    
+    /* Apply animation to the p */
+    #fooddesid::before {
+        animation: foodchangeDescription 24s infinite; /* Repeat every 6 seconds (4 sets of text in 24 seconds) */
+        content: "";
+
+
+
+
+
+        
+    }
+    
+
+
+
+
+
+    
+    @keyframes HCchangeContent {
+        0% {
+            content: url(https://media.istockphoto.com/id/1466694951/photo/beautiful-artical-shop-in-shonargaon-narayanganj-bangladesh.jpg?s=2048x2048&w=is&k=20&c=-z6X8CqAzEu9avfQkrzurhv08ze3PN1eKo_7vMO-YU0=); /* Initial image URL */
+        }
+        25% {
+            content: url(https://media.istockphoto.com/id/2057794196/photo/hand-weaving-silk-handloom-sarees-saree-with-golden-details-woman-wear-on-festival-ceremony.jpg?s=2048x2048&w=is&k=20&c=-mZdjeSNBjrTKLv_8MHuCFMhqysvUvCWmNUImVd8Hp0=); /* Second image URL */
+        }
+        50% {
+            content: url(https://media.istockphoto.com/id/1180396973/photo/house-bhopal-madhya-pradesh-india.jpg?s=2048x2048&w=is&k=20&c=avzJDeA5l8UuMsiLCxfREnCPoub-5KEUlqTojo0CrcU=); /* Third image URL */
+        }
+        75% {
+            content: url(https://www.sundarisilks.com/cdn/shop/articles/Bagh-of-madhya-pradesh-cover-image-blog-sundari-silks.png?v=1627638002); /* Fourth image URL */
+        }
+        100% {
+            content: url(https://media.istockphoto.com/id/1296517096/photo/horse-dolls-being-sold-at-handicrafts-fair.jpg?s=2048x2048&w=is&k=20&c=w8UlQ8HKcn_tFG6XEZ1K7_pKBhHA3mM7b_1vf114o3o=); /* Fifth image URL */
+        }
+    }
+    
+
+
+    
+    @keyframes HCchangeText {
+        0% {
+            opacity: 1;
+        }
+        20% {
+            opacity: 1;
+        }
+        25% {
+            content: "Chanderi and Maheshwari Sarees";
+            opacity: 1;
+        }
+        45% {
+            opacity: 1;
+        }
+        50% {
+            content: "Gond Art";
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        75% {
+            content: "Bagh Print";
+            opacity: 1;
+        }
+        95% {
+            opacity: 1;
+        }
+        100% {
+            content: "Terracotta Crafts";
+            opacity: 1;
+        }
+    }
+    
+    @keyframes HCchangeDescription {
+        0% {
+            opacity: 1;
+        }
+        20% {
+            opacity: 1;
+        }
+        25% {
+            content: "Chanderi and Maheshwari Sarees";
+            opacity: 1;
+        }
+        45% {
+            opacity: 1;
+        }
+        50% {
+            content: "Gond Art";
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        75% {
+            content: "Bagh Print";
+            opacity: 1;
+        }
+        95% {
+            opacity: 1;
+        }
+        100% {
+            content: "Terracotta Crafts";
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+    @keyframes foodchangeContent {
+        0% {
+            content: url(https://miro.medium.com/v2/resize:fit:800/1*Ci3HkUZER9qgL4_e24grYQ.jpeg); 
+        }
+        25% {
+            content: url(https://images.slurrp.com/prod/articles/hfcq8gy17p5.webp); /* Bhutte Ka Kees */
+        }
+        50% {
+            content: url(https://2.bp.blogspot.com/-9BKPTAZExqc/W9g-lbDiMBI/AAAAAAAAcL0/ef9s-Rca6fk0dmUS7hpT8QXHwBmiZpuCgCLcBGAs/s1600/IMG_3595.JPG); /* Bafla */
+        }
+        75% {
+            content: url(https://image.pixstory.com/optimized/Pixstory-image-169469598980588.png); /* Shikanji */
+        }
+        100% {
+            content: url(https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Swayampurna_Mishra/Malpua_with_rose_and_saffron_syrup.jpg); /* Malpua */
+        }
+    }
+    
+    @keyframes foodchangeText {
+        0% {
+            opacity: 1;
+        }
+        20% {
+            opacity: 1;
+        }
+        25% {
+            content: "Poha-jalebi"; /* Poha */
+            opacity: 1;
+        }
+        45% {
+            opacity: 1;
+        }
+        50% {
+            content: "Bhutte Ka Kees"; /* Bhutte Ka Kees */
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        75% {
+            content: "Saabudana khichdi"; /* Bafla */
+            opacity: 1;
+        }
+        95% {
+            opacity: 1;
+        }
+        100% {
+            content: "Malpua"; /*  */
+            opacity: 1;
+        }
+    }
+    
+    @keyframes foodchangeDescription {
+        0% {
+            opacity: 1;
+        }
+        20% {
+            opacity: 1;
+        }
+        25% {
+            content: "";
+            
+            opacity: 1;
+        }
+        45% {
+            opacity: 1;
+        }
+        50% {
+            content: "";
+            opacity: 1;
+        }
+
+        70% {
+            opacity: 1;
+        }
+        75% {
+            content: "";
+            opacity: 1;
+        }
+        95% {
+            opacity: 1;
+        }
+        100% {
+            content: "";
+            opacity: 1;
+        }
+    }
+
+
+    
+
+    main {
+        background: black;
+       
+        background-size: cover;
+        box-shadow: inset 0 0 100vw 100vw rgba(0,0,0,0.3),0 16px 8px -8px rgba(0, 0, 0, 0.4);
+        max-width: 760px;
+        height: 300px;
+        padding: 0 0 32px;
+        display: flex;
+        overflow-x: scroll;
+        border-radius: 10px;
+        color: White; /* Set text color with opacity */
+    }
+    
+    /*CARD*/
+    .card__btn {
+        color: rgba(255, 255, 255, 0.9); /* Set button text color with opacity */
+        border: 1px solid rgba(255,255,255,0.5);
+        border-radius: 24px;
+        font-family: primary-font;
+        font-size: 6px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 88px;
+        margin: 8px 0 0;
+        opacity: 0.9; /* Set opacity for button text */
+        padding: 8px;
+    }
+    
+    .card__text-sm {
+        color: rgba(255, 255, 255, 0.9); /* Set small text color with opacity */
+        font-family: primary-font;
+        font-size: 20px;
+        margin: 0;
+        padding: 16px 0 8px;
+        position: relative;
+        opacity: 0.9; /* Set opacity for small text */
+    }
+    
+    .card__text-lg {
+        color: rgba(255, 255, 255, 0.9); /* Set large text color with opacity */
+        font-family: secondary-font;
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        line-height: 1.2;
+        width: 100%;
+        margin: 0;
+        opacity: 0.9; /* Set opacity for large text */
+    }
+    
+    /*...large...*/
+    .card-lg__container {
+        padding: 0 16px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: rgba(255, 255, 255, 0.9); /* Set text color with opacity */
+    
+        .card__text-lg {
+            font-family: secondary-font;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+            opacity: 0.9; /* Set opacity for large text */
+        } 
+    
+        .card__text-md {
+            font-family: primary-font;
+            font-size: 1rem;
+            font-weight: 100;
+            line-height: 1.5;
+            padding: 0 32px 0 0;
+            opacity: 0.9; /* Set opacity for medium text */
+        }
+    
+        .card__text-sm {
+            font-size: 14px;
+            opacity: 0.9; /* Set opacity for small text */
+        }
+    
+        .card__text-sm::before {
+            width: 24px;
+            height: 2px;
+            opacity: 0.9; /* Set opacity for pseudo element */
+        }
+    }
+    
+    /*...small...*/
+    .card-sm__container {
+        height: 232px;
+        margin: 0 -88px 0 0;
+        display: flex;
+        align-self: flex-end;
+    }
+    
+    .card-sm {
+        background: #ccc;
+        background-size: cover; 
+        background-position: center center;
+        box-shadow: inset 0 0 100vw 100vw rgba(0, 0, 0, 0.3),
+          0 16px 8px -8px rgba(0,0,0,0.4);
+        border-radius: 8px;
+        width: 104px;
+        height: calc(100% - 64px); 
+        margin: 0 8px;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        cursor: pointer;
+        transition: 0.3s ease;
+    
+        &:hover {
+            margin: -8px 8px 0;
+        }
+    
+        .card__text-sm { 
+            opacity: 0.9; /* Set opacity for small text */
+        }
+    }
+    
+    /*HIDE DEFAULT SCROLL BAR*/
+    .main::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .main {
+        -ms-overflow-style: none;
+    }
+    
+    @media screen and (max-width: 960px) {
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 16px;
+            padding: 8px 0 32px;
+            height: unset;
+            width: calc(100% - 65px);
+            transform: scale(1);
+        }
+    
+        section.card-lg__container {
+            margin: 32px 0 0;
+            padding: 0 0 32px;
+        }
+    
+        section.card-sm__container {
+            align-self: center;
+            margin: 0 -72px 0 0;
+        }
+    }
+    
+    @media screen and (max-width: 695px) {
+        main {
+            padding: 8px 32px 0;
+        }
+    
+        section.card-sm__container {
+            height: unset;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        section.card-sm {
+            width: calc(100% - 32px);
+            height: 200px;
+            margin: 0 0 16px;
+        }
+    
+        .card-sm:hover {
+            margin: 8px 0;
+            transform: scale(0.9);
+        }
+    }
+    
+
+    .big-footer {
+        background-color: #000;
+        padding: 50px 0;
+        color: #fff;
+      }
+      
+      .big-footer h4 {
+        color: #fff;
+      }
+      
+      .big-footer p {
+        color: #ccc;
+      }
+      
+      .footer-section{
+      
+        display:inline-table;
+        background-color: #000;
+      
+      }
+      
+      
+      .social-icons {
+        margin-top: 15px;
+      }
+      
+      
+      
+      .social-icon {
+        color: #ccc;
+        font-size: 24px;
+        margin-right: 15px;
+      }
+      
+      .social-icon:hover {
+        color: #007bff;
+      }
+      
+      
+      /* Add this CSS to your stylesheet */
+      
+      .footer-section {
+        text-align: center; /* Center align the content */
+        flex: 1;
+        margin: 0 10px; /* Add margin for spacing */
+      }
+      
+      .list1 {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0; /* Add margin for spacing between sections */
+      }
+      
+      .list1 li {
+        margin-bottom: 10px;
+      }
+      
+      .list1 li a {
+        color: #ccc;
+        text-decoration: none;
+      }
+      
+      .list1 li a:hover {
+        color: #007bff;
+      }
+      
+      .back-to-top {
+        font-size: 16px;
+        color: #ccc;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      
+      .back-to-top:hover {
+        color: #007bff;
+      }
+      
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .footer-section {
+        flex: 1;
+        margin-right: 20px;
+      }
+      
+      .footer-section:last-child {
+        margin-right: 0;
+      }
+      
+      .footer-section h4 {
+        text-align: center;
+      }
+      
+      
+      .fa-facebook-f:hover{
+      
+      color: #316FF6;
+      
+      }
+      
+      .fa-youtube:hover{
+      
+        color: red;
+        
+        }
+        
+      .fa-twitter:hover{
+      
+        color: #316FF6;
+        
+        }
+        
+      .fa-instagram:hover{
+      
+        color: purple;
+        
+        }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    

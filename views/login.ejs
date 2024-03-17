@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+      
+    <link rel="stylesheet" href=" /stylesheets/login.css">
+      
+   
+
+  
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="content">
+    
+        <!-- <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
+        <br> -->
+        <br>
+        <!-- <p style="font-weight: 600;">Welcome to Pinterest</p> -->
+
+        <p class="header">login to see more</p> 
+        
+        <% if (error.length > 0) { %>
+            <p class="error"> <%= error %></p>
+        <% } %>
+      
+        <form action="/login" method="post">
+
+        <input type="text" name="username" placeholder="Username" class="detail" /><br />
+        <input type="number" name="Contact" placeholder="Mobile Number" class="detail" /><br />
+        <input type="password" name="password" placeholder="Password" class="detail" />
+        <a href="/forgot" style="margin-left: -40px;">Forgot your password?</a>
+
+        <input type="submit"  class="btn int" value="Login Account">
+        
+      </form>
+
+
+       <footer>
+          <!-- <p>
+            By continuing, you agree to Pinterest's
+            <br>
+          <b>Terms of Service</b> and acknowledge you've read our
+            
+            <b>Privacy policy. Notice at collection</b>
+            
+            <br>
+            <br>
+       -->
+            <a href="/signup" class="sigunup">Not on exploreindia ? Sign up</a>
+      <br>
+      <br>
+<!-- 
+      Are you a business? <b>Get started here!</b> -->
+          </p>
+          <hr />
+      
+        </footer> 
+        
+      </div>
+
+    </div>
+    <a href="/signup" class="upbtn">Sign up</a>
+
+  </body>
+</html>

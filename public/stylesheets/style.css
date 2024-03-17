@@ -1,0 +1,620 @@
+@font-face {
+  font-family: open-sans;
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: open-sans;
+}
+
+.logo-img {
+  margin-left: -150px;
+  width: 100px;
+
+}
+
+header {
+  background: url("https://media.istockphoto.com/id/1312523310/photo/walls-of-kumbhalgarh-fortress-rajasthan-state-ind.jpg?s=2048x2048&w=is&k=20&c=f5fNyp-cRXFfqms5COCdcgXhLcyaRtTX-hpdV5G3bZs=");
+  background-repeat:no-repeat;
+  background-color: #000000;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  max-width: 1660px;
+  max-height: 449px;
+  z-index: 0;
+  padding: 36px 245px;
+}
+
+header:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+header {
+  position: relative;
+  max-width: 1660px;
+  max-height: 449px;
+  padding: 36px 245px;
+}
+
+header:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.nav {
+  box-sizing: border-box;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  color: #ffffff;
+}
+
+.nav-item {
+  margin-right: 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 45px;
+  max-width: 688px;
+  padding-top: 120px;
+  padding-bottom: 162px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+.page {
+  width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0 15px;
+  display: flex;
+}
+
+.new-article {
+  display: flex;
+  width: 778px;
+  margin-top: 64px;
+}
+.article-img {
+  display: inline-block;
+  width: 368px;
+  height: 297px;
+}
+
+.tags {
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.one-tag {
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
+.tag-link {
+  text-decoration: none;
+  color: #b59f5b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tag-link:hover {
+  text-decoration: underline;
+}
+
+.article-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.tittle-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tittle-link:hover {
+  color: #b59f5b;
+}
+
+.main-article {
+  margin-left: 30px;
+}
+
+.article-data {
+  color: #888888;
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+.article-author {
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.article-main-text {
+  margin-top: 58px;
+  font-size: 15px;
+}
+
+.new-article-aside {
+  display: flex;
+  margin-top: 29px;
+}
+
+.new-posts-title {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.article-img-aside {
+  width: 73px;
+  height: 73px;
+  margin-right: 21px;
+  display: block;
+}
+
+aside {
+  width: 272px;
+}
+
+.new-posts-title::after {
+  content: "";
+  display: block;
+  background: green;
+  width: 65px;
+  height: 3px;
+  margin: auto;
+  margin-top: 14px;
+  background-color: rgb(181, 159, 91);
+}
+
+.article-data-aside {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.541);
+}
+
+.article-title-aside {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+
+.aside-tittle-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.aside-tittle-link:hover {
+  color: #b59f5b;
+}
+
+.new-posts {
+  margin-top: 60px;
+}
+
+.search {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 63px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.search-input {
+  border: none;
+  background-color: rgb(244, 247, 246);
+  width: 223px;
+  height: 48px;
+  font-size: 13px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(244, 247, 246);
+}
+
+.search-input:focus {
+  outline: none;
+  border: 1px solid #b59f5b;
+  box-sizing: border-box;
+}
+
+.search-button {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: rgb(181, 159, 91);
+  width: 48px;
+  height: 48px;
+}
+
+.search-button:hover {
+  background-color: #323232;
+}
+
+.subscribe-input {
+  border: none;
+  background-color: rgb(244, 247, 246);
+  width: 272px;
+  height: 48px;
+  font-size: 13px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  margin-top: 23px;
+  margin-bottom: 19px;
+  border: 1px solid rgb(244, 247, 246);
+}
+
+.subscribe-input:focus {
+  outline: none;
+  border: 1px solid #b59f5b;
+  box-sizing: border-box;
+}
+
+.subscribe-button {
+  font-weight: bold;
+  background-position: center;
+  border: none;
+  width: 271px;
+  height: 48px;
+  font-size: 14px;
+  background-color: #b59f5b;
+  margin-bottom: 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.subscribe-button:hover {
+  background-color: #323232;
+}
+
+.link-tag {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 3px solid #eeeeee;
+  padding: 5px 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.link-tag:hover {
+  border: 3px solid #b59f5b;
+}
+
+.tag-item {
+  margin-top: 17px;
+  margin-left: 6px;
+}
+
+.asise-tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topics {
+  margin-top: 61px;
+}
+
+.themes-list {
+  list-style: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.footer-section {
+background: #151414;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+
+
+
+.big-footer {
+  background-color: #000;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.big-footer h4 {
+  color: #fff;
+}
+
+.big-footer p {
+  color: #ccc;
+}
+
+.footer-section{
+
+  display:inline-table;
+  background-color: #000;
+
+}
+
+
+.social-icons {
+  margin-top: 15px;
+}
+
+
+
+.social-icon {
+  color: #ccc;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+
+/* Add this CSS to your stylesheet */
+
+.footer-section {
+  text-align: center; /* Center align the content */
+  flex: 1;
+  margin: 0 10px; /* Add margin for spacing */
+}
+
+.list1 {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0; /* Add margin for spacing between sections */
+}
+
+.list1 li {
+  margin-bottom: 10px;
+}
+
+.list1 li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.list1 li a:hover {
+  color: #007bff;
+}
+
+.back-to-top {
+  font-size: 16px;
+  color: #ccc;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.back-to-top:hover {
+  color: #007bff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section:last-child {
+  margin-right: 0;
+}
+
+.footer-section h4 {
+  text-align: center;
+}
+
+
+.fa-facebook-f:hover{
+
+color: #316FF6;
+
+}
+
+.fa-youtube:hover{
+
+  color: red;
+  
+  }
+  
+.fa-twitter:hover{
+
+  color: #316FF6;
+  
+  }
+  
+.fa-instagram:hover{
+
+  color: purple;
+  
+  }
+
+
+  /* Add this CSS to your stylesheet */
+
+.explore-india-details {
+  background-color: black;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.explore-india-details h2 {
+  color: White;
+  margin-left: 370px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.explore-india-details p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.logo-slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.logo-slider img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 30px;
+  margin-right: 20px; /* Adjust spacing between logos */
+  animation: slideLogo 15s infinite linear;
+
+}
+
+@keyframes slideLogo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000%);
+  }
+}
+
+
+.states-list {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+.colorful-div {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to right, #1a1a1a, #363636, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease;
+}
+/* CSS for the link */
+.explore-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+  transition: color 0.3s ease;
+}
+/* Hover effect for the link */
+.explore-link:hover {
+  text-decoration: underline;
+  color: #ff7e5f;
+}

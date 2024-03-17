@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore India</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+    window.onload = function() {
+        alert("Right now we are working with only Madhya Pradesh Tourism");
+    };
+</script>
+
+
+  <style>
+    /* Style the dropdown container */
+.states-list {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px;
+  z-index: 1;
+  border-radius: 8px;
+  width: 200px; /* Increased width */
+  overflow:visible;
+
+}
+
+/* Style the list items */
+.states-list li {
+  list-style-type: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Change the text color to black */
+.states-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Add colorful background on hover */
+.states-list li:hover {
+  background-color: #eaeaea;
+}
+
+/* Show the dropdown menu when hovering over the explore states link */
+#explore-states-link:hover + .states-list {
+  display: block;
+}
+
+/* Animate the dropdown */
+.states-list {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  </style>
+
+</head>
+<body>
+  
+  <header id="header">
+    <div class="header-top">
+      <img class="logo-img" src="https://e7.pngegg.com/pngimages/904/266/png-clipart-india-map-illustration-agra-delhi-package-tour-travel-agent-tamilnadu-text-logo.png" alt="Логотип">
+      <nav class="nav">
+        <ul class="nav-list">
+          
+          <li class="nav-item"><a href="/" style="color: aliceblue;">Home</a></li>
+          <li class="nav-item"><a href="#" style="color: aliceblue;">National parks</a></li>
+         
+          <li class="nav-item">
+            <a href="#" id="explore-states-link" style="color: aliceblue;" onclick="toggleDropdown()">Explore states</a>
+            <ul class="states-list" id="states-dropdown">
+              <li><a href="/mp">Madhya Pradesh</a></li>
+              <li><a href="#">Gujarat</a></li>
+              <li><a href="#">Maharashtra</a></li>
+              <li><a href="#">Uttar Pradesh</a></li>
+              <li><a href="#">Uttarakhand</a></li>
+              <li><a href="#">Rajasthan</a></li>
+              <li><a href="#">Andhra Pradesh/Telangana</a></li>
+              <li><a href="#">Goa</a></li>
+              <li><a href="#">Assam</a></li>
+              <li><a href="#">Bihar</a></li>
+              <li><a href="#">Chhattisgarh</a></li>
+              <li><a href="#">Haryana</a></li>
+              <li><a href="#">Himachal Pradesh</a></li>
+              <li><a href="#">Jharkhand</a></li>
+              <li><a href="#">Karnataka</a></li>
+              <li><a href="#">Kerala</a></li>
+              <li><a href="#">Odisha</a></li>
+              <li><a href="#">Punjab</a></li>
+              <li><a href="#">Tamil Nadu</a></li>
+              <li><a href="#">Telangana</a></li>
+              <li><a href="#">West Bengal</a></li>
+              <li><a href="#">North East</a></li>
+          
+
+              <!-- Add more states here -->
+            </ul> 
+          </li>
+
+          <li class="nav-item"><a href="/signup" style="color: aliceblue;">Sign in</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+    <h1>Relish the beauty of, Incredible India</h1>
+  </header>
+
+  <div class="explore-india-details">
+    <h2 style="margin-left: 450px;">Discover India with MyExploreIndia</h2>
+    <p>Embark on unforgettable journeys tailored to each state with MyExploreIndia. We curate immersive tours that showcase the best of India's cultural heritage, natural wonders, and culinary delights. Our expert guides ensure you experience the warmth of Indian hospitality as you explore iconic landmarks, savor delectable cuisine, and travel in comfort with our top-notch vehicles. With prices starting from just ₹15,000, your dream Indian adventure awaits!</p>
+    <br>
+    <h2 style="margin-left: 580px;">In partners with</h2>
+   
+    <div class="logo-slider" style="margin-top: 100px;">
+      
+    
+      <img src="https://www.mptourism.com/images/logo.png" alt="State 1 Logo">
+      <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/popup-home-page/Newsletter_Aug_23.png" alt="State 1 Logo">
+      <img src="https://i.pinimg.com/originals/6e/1f/e5/6e1fe53696691c0053dbb21efa9221d5.jpg" alt="State 1 Logo">
+      <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-01/18/3/campaign_images/webdr02/the-brand-new-logo-for-rajasthan-tourism-is-right-2-15056-1453107523-1_dblbig.jpg?resize=1200:*" alt="State 1 Logo">
+      <img src="https://w7.pngwing.com/pngs/30/518/png-transparent-tourism-in-kerala-thiruvananthapuram-god-s-own-country-kerala-backwaters-tourism-in-kerala-thumbnail.png" alt="State 1 Logo">
+      <img src="https://play-lh.googleusercontent.com/pKFSr4FIHzyodsZecEm4K1rtCAb7O64TdFvdJftSpfGsE9OsMXzVwOYB26hSs4dw670" alt="State 1 Logo">
+      <img src="https://destinationnortheast.co.in/img/sponsers/Uttar_Pradesh_Tourism.jpg" alt="State 1 Logo">
+      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/1d/85/d7/1d85d7f8-3efa-d415-a105-b515e709737c/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x600wa.png" alt="State 1 Logo">
+      <img src="https://2.bp.blogspot.com/-lBDlTYklJWs/WL5vw0Ei33I/AAAAAAAAGP4/AN3RI_V9XLkN6LK63R36RrxWzkIaoHtpgCLcB/s1600/andhrapradesh-tourism-logo.png" alt="State 1 Logo">
+      <img src="https://swikblog.com/wp-content/uploads/2018/02/Delhi-Tourism-and-Transportation-Development-Corporation.jpg" alt="State 1 Logo">
+      <img src="https://i.pinimg.com/236x/4c/a0/8f/4ca08f566ac5ed9c018ba5d69c133dcd.jpg" alt="State 1 Logo">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4ec2e750529539.58d2c276edd4c.png" alt="State 1 Logo">
+      <img src="https://www.incredibleindia.org/content/dam/incredible-india-v2/images/logo/Jammu%20and%20Kashmir.jpg" alt="State 1 Logo">
+      <img src="https://yt3.googleusercontent.com/ytc/AIdro_lF5f7CiW-c_ResbUckpTgOjh1h5hCG-hysxEHl_w=s900-c-k-c0x00ffffff-no-rj" alt="State 1 Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Awesome_Assam_Logo.png" alt="State 1 Logo">
+      <img src="https://www.duniaghoomo.com/wp-content/uploads/2023/10/client16.png" alt="State 1 Logo">
+      <img src="https://www.shutterstock.com/image-vector/goa-india-beach-bar-travel-260nw-445939786.jpg" alt="State 1 Logo">
+      <img src="https://cdn5.f-cdn.com/contestentries/1410355/19747541/5b95f56d60345_thumb900.jpg" alt="State 1 Logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpxg0OZLqM8UkW32Tah_oDpGmjjI_9gAdSSNrENZNWjdeLTiiDlSkoGu64hOudPw-K7wg&usqp=CAU" alt="State 1 Logo">
+      <img src="https://media.licdn.com/dms/image/C510BAQEaVZoSnvZNDw/company-logo_200_200/0/1630628640859/uttarakhand_tourism_development_board___india_logo?e=2147483647&v=beta&t=a51VVJZVVwRuFErjqYkz88msbyEiZdtxFZecYHLeuAU" alt="State 1 Logo">
+    
+  </div>  
+
+  </div>
+  
+  <div class="colorful-div">
+    <!-- Content -->
+    <div>
+        <p>Right now we are working with only Madhya Pradesh Tourism</p>
+        <a href="/mp" class="explore-link">Explore Madhya Pradesh</a>
+    </div>
+</div>
+
+
+
+  <div class="page">
+    <main>
+      <div class="articles">
+        <article class="new-article">
+            <img class="article-img" width="368" height="297" src="https://www.mptourandtravels.com/images/header1.jpg" alt="Person walking on beach">
+          <div class="main-article">
+            <ul class="tags">
+              <li class="one-tag"><a class="tag-link" href="#">Madhya Pradesh</a></li>
+
+            </ul>
+              <div class="article-info">
+            
+            </div>
+            <div class="article-main-text">
+              <p class="article-text">Madhya Pradesh, often referred to as the "Heart of India," boasts a rich tapestry of cultural heritage, stunning natural landscapes, and vibrant traditions that captivate visitors from around the globe. From the historic splendor of its ancient temples and majestic forts to the breathtaking beauty of its national parks and wildlife sanctuaries, Madhya Pradesh beckons adventurers and culture enthusiasts alike to explore its diverse wonders and uncover the hidden treasures nestled within its heartland.</p>
+            </div>
+          </div>
+        </article>
+        <article class="new-article">
+            <img class="article-img" width="368" height="297" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQVX9h8VOqt3UWlWAKbjI4t4mKiP-aUlctA&usqp=CAU" alt="Person doing yoga">
+          <div class="main-article">
+            <ul class="tags">
+              <li class="one-tag"><a class="tag-link" href="#">Rajasthan</a></li>
+          
+            </ul>
+            <div class="article-info">
+            
+            </div>
+            <div class="article-main-text">
+              <p class="article-text">Rajasthan, the land of kings, mesmerizes with its desert landscapes, majestic forts, and vibrant culture. From the iconic palaces of Jaipur to the golden sands of Jaisalmer, every corner exudes a royal charm. Rich in history and heritage, Rajasthan is a kaleidoscope of colors, with bustling markets, folk music, and traditional dances. Its cuisine, with flavors as bold as its architecture, offers a delightful culinary journey. In Rajasthan, every moment is a celebration of life amidst a timeless backdrop of regal splendor.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="new-article">
+            <img class="article-img" width="368" height="297" src="https://www.treebo.com/blog/wp-content/uploads/2020/09/Satara-1.jpg" alt="Person at concert">
+          <div class="main-article">
+            <ul class="tags">
+              <li class="one-tag"><a class="tag-link" href="#">Maharashtra
+                </a></li>
+            </ul>
+            <div class="article-info">
+            
+            </div>
+            <div class="article-main-text">
+              <p class="article-text">Maharashtra, a vibrant state on India's west coast, boasts diverse landscapes, from bustling Mumbai to serene hill stations like Lonavala. Its rich cultural tapestry is woven with festivals, art, and cuisine. With the bustling streets of Mumbai as its heartbeat, Maharashtra pulsates with energy, offering a blend of modernity and tradition.
+              </p><br>
+          
+            </div>
+          </div>
+        </article>
+        <article class="new-article">
+            <img class="article-img" width="368" height="297" src="https://uptourism.gov.in/site/writereaddata/PageGallary/PG_202109221439475291.jpg" alt="Breakfast">
+          <div class="main-article">
+            <ul class="tags">
+              <li class="one-tag"><a class="tag-link" href="#">Uttarpradesh</a></li>
+          
+            </ul>
+            <div class="article-info">
+           
+            </div>
+            <div class="article-main-text">
+              <p class="article-text">Uttar Pradesh, India's most populous state, is steeped in history and cultural heritage. From the majestic Taj Mahal in Agra to the spiritual hub of Varanasi along the Ganges River, Uttar Pradesh offers a glimpse into India's rich past and vibrant present. With its bustling cities, ancient temples, and bustling markets, Uttar Pradesh is a fascinating blend of tradition and modernity.
+
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="new-article">
+            <img class="article-img" width="368" height="297" src="https://blog.thomascook.in/wp-content/uploads/2017/11/Untitled-design-29-1-1.png" alt="Pillow on chair">
+          <div class="main-article">
+            <ul class="tags">
+              <li class="one-tag"><a class="tag-link" href="#">North-east</a></li>
+         
+            </ul>
+            <div class="article-info">
+         
+            </div>
+            <div class="article-main-text">
+              <p class="article-text">The Northeast of India is a region of stunning natural beauty, diverse cultures, and warm hospitality. It's home to the famous one-horned rhinoceros in Kaziranga, the living root bridges of Meghalaya, and the vibrant Hornbill Festival in Nagaland. With its lush landscapes and unique traditions, the Northeast offers a rich tapestry of experiences for travelers.
+
+
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="new-article">
+            <img class="article-img" width="368" height="297" src="https://www.adotrip.com/public/images/state/contentImg/5f48f77f8a5d2.jpg" alt="Two people on mountain">
+          <div class="main-article">
+            <ul class="tags">
+              <li class="one-tag"><a class="tag-link" href="#">Punjab</a></li>
+              
+            </ul>
+            <div class="article-info">
+         
+            </div>
+            <div class="article-main-text">
+              <p class="article-text">Punjab, the land of five rivers, blends history, culture, and warmth in a captivating tapestry. From the iconic Golden Temple to its lush green fields, Punjab's charm is timeless. Known as the "Granary of India," it boasts rich traditions, vibrant festivals, and delectable cuisine. Whether exploring historic sites or savoring Punjabi hospitality, every moment in Punjab is a celebration of its enduring spirit and cultural legacy.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="new-article">
+            <img class="article-img" width="368" height="297" src="https://www.roverholidays.com/blog/wp-content/uploads/2019/10/Best-Places-to-Visit-in-South-India-This-December.png" alt="Breakfast">
+          <div class="main-article">
+            <ul class="tags">
+              <li class="one-tag"><a class="tag-link" href="#">South India</a></li>
+              
+            </ul>
+            <div class="article-info">
+            
+            </div>
+            <div class="article-main-text">
+              <p class="article-text">South India, a region of captivating beauty and rich heritage, is a tapestry of diverse landscapes, ancient temples, and vibrant traditions. From the serene backwaters of Kerala to the majestic temples of Tamil Nadu, each state offers a unique glimpse into its cultural tapestry. The flavors of South Indian cuisine tantalize the taste buds, while the warmth of its people leaves an indelible mark on visitors. With its lush greenery, pristine beaches, and architectural marvels, South India is a treasure trove waiting to be explored.
+
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <aside>
+      <section class="new-posts">
+        <h2 class="new-posts-title">New added places</h2>
+        <article class="new-article-aside">
+          <div class="article-img-aside">
+            <img class="article-img-aside" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCzb9L5P3if-MwasGPgtGkIbrXLLvtVY9ePQ&usqp=CAU" alt="Person walking on beach">
+          </div>
+          <div class="main-article-aside">
+            <time class="article-data-aside">June 14, 2022 </time>
+            <h3 class="article-title-aside"><a class="aside-tittle-link" href="#">Mahankal Lok , Ujjain</a></h3>
+          </div>
+        </article>
+        <article class="new-article-aside">
+          <div class="article-img-aside">
+            <img class="article-img-aside" src="https://www.exoticindiaart.com/images/articles/article_1861707545165.webp" alt="Person doing yoga">
+          </div>
+       
+          <div class="main-article-aside">
+            <time class="article-data-aside">April 04, 2022 </time>
+            <h3 class="article-title-aside"><a class="aside-tittle-link" href="#">Nathdwata, Rajasthan</a></h3>
+         
+          </div>
+        </article>
+        <article class="new-article-aside">
+          <div class="article-img-aside">
+            <img class="article-img-aside" src="https://i0.wp.com/90rollsroyces.com/wp-content/uploads/2021/03/Sanauli-3.jpg?ssl=1" alt="Chair on balcony">
+          </div>
+       
+          <div class="main-article-aside">
+            <time class="article-data-aside">July 17, 2022 </time>
+          <h3 class="article-title-aside"><a class="aside-tittle-link" href="#">Sinauli, Uttarpradesh</a></h3>
+       
+          </div>
+        </article>
+        <article class="new-article-aside">
+          <div class="article-img-aside">
+            <img class="article-img-aside" src="https://static.india.com/wp-content/uploads/2022/09/kuno-.jpg?impolicy=Medium_Resize&w=1200&h=800" alt="Breakfast">
+          </div>
+        
+          <div class="main-article-aside">
+            <time class="article-data-aside">January 14, 2023 </time>
+          <h3 class="article-title-aside"><a class="aside-tittle-link" href="#">Kuno National Park, Madhya Pradesh</h3>
+       
+          </div>
+        </article>
+        <article class="new-article-aside">
+          <div class="article-img-aside">
+            <img class="article-img-aside" src="https://fl-i.thgim.com/public/the-nation/article25661853.ece/alternates/FREE_1200/FL21STATUEPATEL" alt="Three girls' hair">
+          </div>
+       
+          <div class="main-article-aside">
+            <time class="article-data-aside">June 14, 2018 </time>
+            <h3 class="article-title-aside"><a class="aside-tittle-link" href="#">Statue of Unity, Gujrat</a></h3>
+         
+          </div>
+        </article>
+        <form class="search">
+          <label class="visually-hidden" for="search">Search Field</label>
+          <input name="search" class="search-input" type="text" placeholder="Search..." id="search">
+          <button class="search-button"><span class="visually-hidden">Search Button</span></button>
+        </form>
+      </section>
+      <section class="mailing-lists">
+        <h2 class="new-posts-title">Subscribe for get info about discounts </h2>
+        <form action="">
+          <label class="visually-hidden" for="email">Email Input Field</label>
+          <input class="subscribe-input" type="text" placeholder="Your email address" name="email" for="email">
+          <button class="subscribe-button">Subscribe</button>
+        </form>
+      </section>
+
+      <section class="aside-tag">
+       
+        <!-- <h2 class="new-posts-title">Tags</h2>
+       
+        -->
+        <!-- <ul class="asise-tag-list">
+          <li class="tag-item"><a class="link-tag" href="#">Fashion</a></li>
+          <li class="tag-item"><a class="link-tag" href="#">Music</a></li>
+          <li class="tag-item"><a class="link-tag" href="#">Lifestyle</a></li>
+          <li class="tag-item"><a class="link-tag" href="#">Art</a></li>
+          <li class="tag-item"><a class="link-tag" href="#">Interior</a></li>
+          <li class="tag-item"><a class="link-tag" href="#">Travel</a></li>
+          <li class="tag-item"><a class="link-tag" href="#">Food</a></li>
+          <li class="tag-item"><a class="link-tag" href="#">Health</a></li>
+        </ul> -->
+      
+      </section>
+      <section class="topics">
+      
+        <!-- <h2 class="new-posts-title">Topics</h2>
+        <ul class="themes-list">
+          <li class="things-item"><a class="thing-link" href="#">Beauty</a><span class="things-number">12</span></li>
+          <li class="things-item"><a class="thing-link" href="#">Health</a><span class="things-number">4</span></li>
+          <li class="things-item"><a class="thing-link" href="#">Lifestyle</a><span class="things-number">145</span></li>
+          <li class="things-item"><a class="thing-link" href="#">Music</a><span class="things-number">28</span></li>
+          <li class="things-item"><a class="thing-link" href="#">Sport</a><span class="things-number">62</span></li>
+          <li class="things-item"><a class="thing-link" href="#">Yoga</a><span class="things-number">8</span></li>
+        </ul> -->
+      
+      
+      </section>
+    </aside>
+  </div>
+<br>
+
+
+  <footer class="big-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h4 style="margin-left: 660px;">About Us</h4>
+          <p style="margin-left: 20px; margin-top: 10px;"> "Explore India is your gateway to an immersive journey through the diverse and enchanting landscapes of the Indian subcontinent. Our platform is dedicated to providing curated travel experiences that capture the essence of each state. From the majestic mountains of Himachal Pradesh to the sun-kissed beaches of Goa, we offer meticulously crafted itineraries that showcase the rich cultural tapestry, historical landmarks, and natural wonders unique to every corner of India. Whether you're seeking spiritual enlightenment in Uttarakhand's serene retreats or embarking on a culinary adventure in Tamil Nadu, our expertly designed trips ensure an unforgettable exploration of India's myriad charms. Let Explore India be your companion as you embark on a voyage of discovery through this incredible land."
+
+
+
+
+
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="list1" style="margin-left: 40px;">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Events</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-section" style="margin-left: 300px;">
+            <h4>Popular Places</h4>
+            <ul class="list1">
+              <!-- Popular Places content -->
+              <li><a href="#">Ujjain</a></li>
+              <li><a href="#">Laddakh</a></li>
+              <li><a href="#">Kedarnath</a></li>
+              <li><a href="#">Rameshwaram</a></li>
+              <li><a href="#">Statue of unity</a></li>
+              <li><a href="#">Golden temple</a></li>
+              <li><a href="#">Andman & Nocobar</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-section"  style="margin-left: 300px; margin-top: 40px;">
+            <h4>Media</h4>
+            <ul class="list1">
+              <!-- Media content -->
+              <li><a href="#">Vlogs</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Experiences</a></li>
+              <li><a href="#">In the News</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-section " style="margin-left: 300px;">
+            <h4>Magicstream</h4>
+            <ul class="list1">
+              <!-- Magicstream content -->
+              <li><a href="#">Travelougs</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Alive</a></li>
+              <li><a href="#">Soul</a></li>
+              <li><a href="#">Feast</a></li>
+  
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center" >
+          <h4 style="margin-left: 740px; margin-top: 40px;">Follow Us</h4>
+          <div class="social-icons text-center">
+            <a href="#" class="social-icon" style="margin-left: 700px;"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+          <a href="#" class="back-to-top" style="margin-left: 715px;"><i class="fas fa-chevron-up"></i> Back to Top</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center" style="margin-top: 40px; margin-left: 10px;">
+          <p>&copy; 2024 Explore India. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+<script>
+  
+
+  function toggleDropdown() {
+  var dropdown = document.getElementById("states-dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  } 
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#explore-states-link')) {
+    var dropdown = document.getElementById("states-dropdown");
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script>
+    const header = document.getElementById('header');
+const images = [
+
+  'url("https://media.istockphoto.com/id/583979180/photo/blue-city-and-mehrangarh-fort-on-the-hill-at-night.jpg?s=2048x2048&w=is&k=20&c=BSjB2KOoLYcP7_y-9fAvkdMRa2XOzxlCT1rvgAOumBs=")',
+  'url("https://media.istockphoto.com/id/1216024789/photo/gateway-of-india-mumbai.jpg?s=2048x2048&w=is&k=20&c=zGmv4gDc-Zqz8Whj7r_UGKOoC4M__kwjZ-5pgVNUi8c=")',
+  'url("https://images.unsplash.com/photo-1623952146070-f13fc902f769?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+  'url("https://media.istockphoto.com/id/1384661820/photo/the-small-island-at-the-most-southern-tip-of-sub-indian-continent-gunya-kumari.jpg?s=2048x2048&w=is&k=20&c=H4qpSvWQxflQgpJQVu-9FnN2WLmuRT6tM4zSmqBFVlM=")',
+  'url("https://media.istockphoto.com/id/1207097218/photo/lord-jagannath-temple-in-puri-odisha-india-an-ancient-hindu-temple-in-india.jpg?s=2048x2048&w=is&k=20&c=59Ksx7GxznrkXbFMX6bUeVkVYeNSQbRwIYCv_ynhU4I=")',
+  'url("https://media.istockphoto.com/id/1163455002/photo/varanasi-city-architecture-with-view-of-migratory-birds-on-river-ganges-as-seen-from-a-boat.jpg?s=2048x2048&w=is&k=20&c=qcmnONS-nCCMqUQ21-WfzSdWOLfA0GUswP_RAute4Y4=")',
+  'url("https://media.istockphoto.com/id/637256534/photo/golden-temple.webp?s=2048x2048&w=is&k=20&c=6tp2o-N9bc_uGnVTK9btnDxfn1XFLeCHUrCT_Ct7GIk=")',
+  'url("https://media.istockphoto.com/id/499700869/photo/indian-pickers-plucking-tea-leaves-in-darjeeling-india.jpg?s=2048x2048&w=is&k=20&c=j97D-VTRdABhzB776N1hCIygCZeTBTLKj1aNp0n7IBA=")',
+  
+  // Add URLs for all your images here
+];
+let currentIndex = 0;
+
+function changeBackground() {
+  header.style.backgroundImage = images[currentIndex];
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+setInterval(changeBackground, 3000); // Change image every 3 seconds
+  </script>
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mp Tourism</title>
+    <link rel='stylesheet' href='/stylesheets/mp.css' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+                .title-animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: White;
+            height: 100px; /* Adjust the height as needed */
+            /* animation: colorChange 4s infinite alternate;
+       */
+        }
+
+        @keyframes colorChange {
+            0% { background-color: red; }
+            25% { background-color: blue; }
+            50% { background-color: green; }
+            75% { background-color: orange; }
+            100% { background-color: red; }
+        }
+
+        .title-animation h2 {
+            margin: 0;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <div class="slides">
+            <img src="https://media.istockphoto.com/id/470618116/photo/rajwada-palace-indore.jpg?s=2048x2048&w=is&k=20&c=TO-uO_hn9mIM_ktG5am9XXVYE-Uj3mVnNEofb_i2Le4=" alt="Image 1">
+            <img src="https://images.unsplash.com/photo-1597132441547-a4fcd316da61?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1">
+            <img src="https://images.unsplash.com/photo-1584185421530-8060826264f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+            <img src="https://images.unsplash.com/photo-1585744945554-5df801d2b680?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+            <img src="https://plus.unsplash.com/premium_photo-1697729584915-bf08db03ba19?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+            <img src="https://media.istockphoto.com/id/520373860/photo/three-bengal-tigers-in-front-of-tourist-car.jpg?s=2048x2048&w=is&k=20&c=Z0YyumHgh9ZZuBIYCXSkMqG9oXrsZpuVaUOQ-5jhz8I=" alt="Image 2">
+            <img src="https://plus.unsplash.com/premium_photo-1661930618375-aafabc2bf3e7?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+            <img src="https://media.istockphoto.com/id/520838006/photo/famous-temples-of-khajuraho.jpg?s=2048x2048&w=is&k=20&c=cKTsaxftiNzKDzV1GD5_lmztb27PBFd5Nct8IG4TqSg=" alt="Image 2">
+         
+            <!-- Add more images here -->   
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="logo">
+            <img src="https://www.mptourism.com/images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                          <li><a href="/">Home</a></li>
+                           <li><a href="/">Logout</a></li>
+                <li><a href="/pay">Book Trip</a></li>
+                <li><a href="">Explore Other States</a></li>
+            </ul>
+        </nav>
+    </div>
+
+        <div class="title-animation">
+        <h2>Discover Top Destinations</h2>
+       </div>
+
+        
+        <div class="blurry-background"></div>
+        <div class="clear-image">
+            <h2 style="color: white;">Discover Top Destinations</h2>
+        
+            <img src="" alt="">
+            <h2 id="place" style="margin-left: 400px; color: aliceblue;"></h2>
+            <p id="placedescription" style="margin-left: 60px; color: aliceblue;"></p>
+                
+            </div>
+            
+
+
+            <div class="container">
+                <div class="box1">
+                    <h2 class="box-heading" style="margin-left: -250px;">Handicraft of Madhya Pradesh</h2>
+                  
+                    <img src="https://media.istockphoto.com/id/2012336186/photo/traditional-handmade-colorful-toys-made-from-wood-wooden-toys-family-selective-focus.jpg?s=2048x2048&w=is&k=20&c=NbAJ72jWddyvaTiOp3aKmz9fDHJzrpTLTPsgaB_D70s=" alt="Handicraft Image" style="margin-left: -250px;">
+                  
+                  
+                    <div class="box-name"   style="margin-left: -100px;" id="hcnameid"></div>
+                    <div class="box-description" id="hcdesid"  style="margin-left: -220px;"></div>
+                </div>
+                
+                <div class="box">
+                    <h2 class="box-heading" style="margin-left: 500px; margin-top: -570px; ">Exotic Food of Madhya pradesh</h2>
+                 
+                    <img src="https://media.istockphoto.com/id/852173226/photo/indian-cuisine-dal-baati.jpg?s=2048x2048&w=is&k=20&c=IOlJMhHXoauwZQM2ZMey7ROMnqfjI5obLy_-mcnQXs0=" alt="Food Image" style="margin-left: 500px;">
+              
+                    
+                    <div class="box-name"  style="margin-left: 700px;" id="foodnameid"></div>
+                    <div class="box-description" id="fooddesid" style="margin-left: 400px;"></div>
+                </div>
+            </div>
+            
+
+
+
+            <!-- day 1 of tour -->
+
+
+            <main class="main" style="background-image: url(); background-size: cover; filter: brightness(90%);">
+       
+                <section class="card-lg__container">
+                  <h1 class="card__text-lg">Day 1 Indore</h1>
+                  <p class="card__text-md">Duis aute irure dolor in reprehenderit in voluptate nulla pariatur.</p>
+                  <p class="card__text-md"><strong>Stay:</strong> Hotel Oasis</p>
+                </section>
+              
+              
+
+                <section class="card-sm__container">
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image:url('https://travelophia.com/wp-content/uploads/2023/02/Chappan-Dukan.jpg')">
+                    <p class="card__text-sm">56 Dukan </p>
+                    <h1 class="card__text-lg">Indore</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://files.prokerala.com/news/photos/imgs/1024/khajrana-ganesh-temple-indore-1313597.jpg'); background-position: center right;">
+                    <p class="card__text-sm">Khajrana Ganesh</p>
+                    <h1 class="card__text-lg">Indore</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://www.jagranimages.com/images/newimg/15042022/15_04_2022-pitreswarhanuman_22629885.jpg')">
+                    <p class="card__text-sm">Pitra Parvat</p>
+                    <h1 class="card__text-lg">Indore</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://content3.jdmagicbox.com/comp/indore/d9/0731px731.x731.170612164417.s8d9/catalogue/sarafa-bazar-chopati-rajwada-indore-iqo258yh1m.jpg')">
+                    <p class="card__text-sm">Sarafa Bazaar</p>
+                    <h1 class="card__text-lg">Indore</h1>
+                  </section>
+                  <!--- END: CARD --->
+                 
+              
+              </main>
+
+
+
+                <!-- day 2 of tour -->
+
+                <main class="main" style="margin-top: -332px; margin-left: 765px; background-image: url(); background-size: cover; filter: brightness(90%);">
+            
+                <section class="card-lg__container">
+                    <h1 class="card__text-lg">Day 2 Ujjain,Omakreshwar</h1>
+                    <p class="card__text-md">Duis aute irure dolor in reprehenderit in voluptate nulla pariatur.</p>
+                    <p class="card__text-md"><strong>Stay:</strong> Hotel Oasis</p>
+                  </section>
+                
+                <section class="card-sm__container">
+                    <!-- DAY 1 -->
+                    <section class="card-sm" style="background-image:url('https://servdharm.com/cdn/shop/articles/mahakal-temple-ujjain_800x.webp?v=1681471765')">
+                        <p class="card__text-sm">Mahakal Jyortiling</p>
+                        <h1 class="card__text-lg">Ujjain</h1>
+                    </section>
+            
+                    <!-- DAY 2 -->
+                    <section class="card-sm" style="background-image: url('https://hindi.oneindia.com/img/2022/12/mahakallok-1670337001.jpeg'); background-position: center right;">
+                        <p class="card__text-sm">Mahakal Lok</p>
+                        <h1 class="card__text-lg">Ujjain</h1>
+                    </section>
+            
+                    <!-- DAY 3 -->
+                    <section class="card-sm" style="background-image: url('https://content.jdmagicbox.com/comp/ujjain/l3/9999px734.x734.181113155150.w7l3/catalogue/maharishi-sandipini-ashram-ujjain-ashrams-g8nv0qn3p1.jpg')">
+                        <p class="card__text-sm">Sandipani Ashram</p>
+                        <h1 class="card__text-lg">Ujjain</h1>
+                    </section>
+
+            
+                    <!-- DAY 4 -->
+                    <section class="card-sm" style="background-image: url('https://www.devshoppe.com/cdn/shop/articles/kal_bhairav_ujjain_800x800.jpg?v=1661065148')">
+                        <p class="card__text-sm">Kal Bhairav</p>
+                        <h1 class="card__text-lg">Ujjain</h1>
+                    </section>
+                  
+                    <section class="card-sm" style="background-image: url('https://www.templedarshanyatri.com/upload/Omkareshwar_Temple2.jpg')">
+                        <p class="card__text-sm">Omkareshwar Jyortiling</p>
+                        <h1 class="card__text-lg">Omkareshwar</h1>
+                    </section>
+                  
+
+                    <!-- Repeat for remaining days -->
+                </section>
+            </main>
+            
+
+
+
+              <!-- day 3 of tour -->
+
+
+              <main class="main" style="background-image: url(); background-size: cover; filter: brightness(90%);">
+
+              <section class="card-lg__container">
+                  <h1 class="card__text-lg">Day 3 Maheshwar,Mandav</h1>
+                  <p class="card__text-md">Duis aute irure dolor in reprehenderit in voluptate nulla pariatur.</p>
+                  <p class="card__text-md"><strong>Stay:</strong> Hotel Oasis</p>
+             
+                            </section>
+              
+              
+                <section class="card-sm__container">
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image:url('https://assets.telegraphindia.com/telegraph/2023/Jan/1674900952_shutterstock_2146495311.jpg')">
+                    <p class="card__text-sm">Maheshwar</p>
+                    <h1 class="card__text-lg">Maheshwar</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://ujjaintour.com/wp-content/uploads/2020/02/maxresdefault-3.jpg.webp'); background-position: center right;">
+                    <p class="card__text-sm">Jahaz Mahal</p>
+                    <h1 class="card__text-lg">Mandav</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEHtcICVZaYNGHxV9sUxwpOGqeWh5XFvspGZQi108LfH9TpfiVOxij1KggOBiDrQgKetSBa7XWZPx_5KqjXd0t8RHQ66LAHIVqgqMj3sQU_hGWQ4Ho3_Ka3gpypC8CxwhEWfD9o4ugU6Ty/s1600/574465_355448684530095_1387150617_n.jpg')">
+                    <p class="card__text-sm">Rani Rupmati Mahal</p>
+                    <h1 class="card__text-lg">Mandav</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                 
+              
+              </main>
+
+
+
+                <!-- day 4 of tour -->
+
+                <main class="main" style="margin-top: -332px; margin-left: 765px; background-image: url(); background-size: cover; filter: brightness(80%);">
+            
+                <section class="card-lg__container">
+                    <h1 class="card__text-lg">DAy 4 Panchmarhi,Bhopal</h1>
+                    <p class="card__text-md">Duis aute irure dolor in reprehenderit in voluptate nulla pariatur.</p>
+                    <p class="card__text-md"><strong>Stay:</strong> Hotel Oasis</p>
+                  </section>
+                
+                <section class="card-sm__container">
+                    <!-- DAY 1 -->
+                    <section class="card-sm" style="background-image:url('https://assets.thehansindia.com/h-upload/2021/12/11/1130952-s1.webp')">
+                        <p class="card__text-sm">Panchmarhi</p>
+                        <h1 class="card__text-lg">Panchmarhi</h1>
+                    </section>
+            
+                    <!-- DAY 2 -->
+                    <section class="card-sm" style="background-image: url('https://1.bp.blogspot.com/-WPeFLuoHbmI/XkjzjzTbWSI/AAAAAAAAAkE/tnccBBIoVSsoNsP9An2e9Xm6Rxy4anJZQCLcBGAsYHQ/s1600/Jatashankar%2BTemple%2Bpachmarhi2.jpg'); background-position: center right;">
+                        <p class="card__text-sm">Jatashankar Mandir</p>
+                        <h1 class="card__text-lg">Panchmarhi</h1>
+                    </section>
+            
+                    <!-- DAY 3 -->
+                    <section class="card-sm" style="background-image: url('https://krossadventure.com/wp-content/uploads/2023/04/Pandava-Caves.jpg')">
+                        <p class="card__text-sm">Pandav Caves</p>
+                        <h1 class="card__text-lg">Panchmarhi</h1>
+                    </section>
+            
+                    <!-- DAY 4 -->
+                    <section class="card-sm" style="background-image: url('https://1.bp.blogspot.com/-iAGbvO0jZbs/XVV2GuYVyFI/AAAAAAAAcq8/IUgmGYhkbKsfPx__j0EnxPD0DXYlGdDXACLcBGAs/s1600/1.png')">
+                        <p class="card__text-sm">Bhopal City</p>
+                        <h1 class="card__text-lg">Bhopal</h1>
+                    </section>
+                    
+                    <section class="card-sm" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG/250px-East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG')">
+                        <p class="card__text-sm">Sanchi stupa</p>
+                        <h1 class="card__text-lg">Bhopal</h1>
+                    </section>
+                
+                    <section class="card-sm" style="background-image: url('https://www.seawatersports.com/img/newimage/places/bhimbetka-caves.jpg')">
+                        <p class="card__text-sm">BhimBetika</p>
+                        <h1 class="card__text-lg">Bhopal</h1>
+                    </section>
+                
+
+
+                    <!-- Repeat for remaining days -->
+                </section>
+            </main>
+
+
+
+
+
+
+
+  <!-- day 5 of tour -->
+  
+  <main class="main" style="background-image: url(); background-size: cover; filter: brightness(90%);">
+         
+  <section class="card-lg__container">
+                  <h1 class="card__text-lg">Day 5 Satpura National Park</h1>
+                  <p class="card__text-md">Duis aute irure dolor in reprehenderit in voluptate nulla pariatur.</p>
+                  <p class="card__text-md"><strong>Stay:</strong> Hotel Oasis</p>
+              
+            
+                </section>
+              
+              
+                <section class="card-sm__container">
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image:url('https://pratapj.com/pxshv1/wp-content/uploads/picnic-spot-deep-inside-the-satpura-tiger-reserve_pj.jpg')">
+                    <p class="card__text-sm">Satpura Deep Forest</p>
+                    <h1 class="card__text-lg">Satpura</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://www.trawell.in/admin/images/upload/294298337Madhai_Jeep_Safari.jpg'); background-position: center right;">
+                    <p class="card__text-sm">Satpura National Park</p>
+                    <h1 class="card__text-lg">Satpura</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://www.satpuranationalparkonline.in/uploads/satpura-national-park-1.jpg')">
+                    <p class="card__text-sm">Satpura National Park</p>
+                    <h1 class="card__text-lg">Satpura</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                 
+              
+              </main>
+
+
+
+                <!-- day 6 of tour -->
+             
+                <main class="main" style="margin-top: -332px; margin-left: 765px; background-image: url(); background-size: cover; filter: brightness(90%);">
+              
+                <section class="card-lg__container">
+                    <h1 class="card__text-lg">Day 6 Bhedaghat,Orchha</h1>
+                    <p class="card__text-md">Duis aute irure dolor in reprehenderit in voluptate nulla pariatur.</p>
+                    <p class="card__text-md"><strong>Stay:</strong> Hotel Oasis</p>
+                  </section>
+                
+              
+                </section>
+            
+                <section class="card-sm__container">
+                    <!-- DAY 1 -->
+                    <section class="card-sm" style="background-image:url('https://static.toiimg.com/thumb/70245511.cms?resizemode=75&width=1200&height=900')">
+                        <p class="card__text-sm">Bhedaghat</p>
+                        <h1 class="card__text-lg">Jabalpur</h1>
+                    </section>
+            
+                    <!-- DAY 2 -->
+                    <section class="card-sm" style="background-image: url('https://www.mptourism.com/images/point-of-interest/bhedaghat-poi2_0.jpg'); background-position: center right;">
+                        <p class="card__text-sm">Dhuandhar Waterfall</p>
+                        <h1 class="card__text-lg">Jabalpur</h1>
+                    </section>
+            
+                    <!-- DAY 3 -->
+                    <section class="card-sm" style="background-image: url('https://static.toiimg.com/photo/69563647.cms')">
+                        <p class="card__text-sm">Orchha Fort</p>
+                        <h1 class="card__text-lg">Orchha</h1>
+                    </section>
+            
+                    <!-- DAY 4 -->
+                    <section class="card-sm" style="background-image: url('https://www.remotelands.com/travelogues/app/uploads/2018/06/orchha.jpg')">
+                        <p class="card__text-sm">Orchha Temples</p>
+                        <h1 class="card__text-lg">Orchha</h1>
+                    </section>
+                    
+                    <!-- Repeat for remaining days -->
+                </section>
+            </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- day 7 of tour -->
+
+
+
+  <main class="main" style="background-image: url(); background-size: cover; filter: brightness(90%);">
+
+                  <section class="card-lg__container">
+                  <h1 class="card__text-lg" style="color: white;">Day 7 Khajuraho,Gwalior</h1>
+                  <p class="card__text-md" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facere eum in molestiae fugit aliquam!</p>
+                     <p class="card__text-md"><strong>Stay:</strong> Hotel Oasis</p>
+              
+              
+                     
+                </section>
+              
+                
+                <section class="card-sm__container">
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image:url('https://resize.indiatvnews.com/en/centered/oldbucket/1200_675/mainnational/Khajuraho-the-T22547.jpg')">
+                    <p class="card__text-sm">Khajuraho Temples</p>
+                    <h1 class="card__text-lg">Khajuraho</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjim0rnCqwTMVtjzXNtuci4RGLwFlyARmUY-ioLsZD3ivQUZVR-Fn4ibIzpEKB3oTLWa5EVvVnPmqOfNg1_gFx1Cj892PeXWA-lH5ljGR0KhPzXAme4Oih-Ba8MlXPEeyfU4A-oNp8b9X2p/s2048/20210312_125200.jpg'); background-position: center right;">
+                    <p class="card__text-sm">Khajuraho Erotic Sculptures</p>
+                    <h1 class="card__text-lg">Khajuraho</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                  <section class="card-sm" style="background-image: url('https://3.imimg.com/data3/QO/HH/MY-9614012/img-heritage-gwalior-fort.jpg')">
+                    <p class="card__text-sm">Gwalior Fort</p>
+                    <h1 class="card__text-lg">Gwalior</h1>
+                  </section>
+                  <!--- END: CARD --->
+              
+                  <!--- START: CARD --->
+                 
+                  
+              </main>   
+
+
+
+
+
+              <main class="main" style="margin-top: -332px; margin-left: 765px; position: relative;" >
+                <div class="trip-info">
+                    <h1 style="margin-left: 100px;">Book Your 7-Day Amazing Trip to MP Now! Just At ₹15000</h1>
+                    <p style="margin-left: 200px;">Experience the best of Madhya Pradesh with:</p>
+                    <ul style="margin-left: 200px;">
+                        <li>Scrumptious local cuisine</li>
+                        <li>Unmatched hospitality</li>
+                        <li>Breathtaking sights and adventures</li>
+                    </ul>
+               
+                    <button id="bookTripBtn" class="book-btn" style="margin-left: 250px; background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease;" onmouseover="this.style.backgroundColor='#03C04A'" onmouseout="this.style.backgroundColor='#007bff'">Book Your Trip</button>
+
+                  </div>
+            </main>
+
+
+
+            <footer class="big-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <h4 style="margin-left: 660px;">About Us</h4>
+                    <p style="margin-left: 20px; margin-top: 10px;"> "Explore India is your gateway to an immersive journey through the diverse and enchanting landscapes of the Indian subcontinent. Our platform is dedicated to providing curated travel experiences that capture the essence of each state. From the majestic mountains of Himachal Pradesh to the sun-kissed beaches of Goa, we offer meticulously crafted itineraries that showcase the rich cultural tapestry, historical landmarks, and natural wonders unique to every corner of India. Whether you're seeking spiritual enlightenment in Uttarakhand's serene retreats or embarking on a culinary adventure in Tamil Nadu, our expertly designed trips ensure an unforgettable exploration of India's myriad charms. Let Explore India be your companion as you embark on a voyage of discovery through this incredible land."
+          
+          
+          
+          
+          
+                    </p>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                      <h4>Quick Links</h4>
+                      <ul class="list1" style="margin-left: 40px;">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Events</a></li>
+            
+                      </ul>
+                    </div>
+                    <div class="footer-section" style="margin-left: 300px;">
+                      <h4>Popular Places</h4>
+                      <ul class="list1">
+                        <!-- Popular Places content -->
+                        <li><a href="#">Ujjain</a></li>
+                        <li><a href="#">Laddakh</a></li>
+                        <li><a href="#">Kedarnath</a></li>
+                        <li><a href="#">Rameshwaram</a></li>
+                        <li><a href="#">Statue of unity</a></li>
+                        <li><a href="#">Golden temple</a></li>
+                        <li><a href="#">Andman & Nocobar</a></li>
+            
+                      </ul>
+                    </div>
+                    <div class="footer-section"  style="margin-left: 300px; margin-top: 40px;">
+                      <h4>Media</h4>
+                      <ul class="list1">
+                        <!-- Media content -->
+                        <li><a href="#">Vlogs</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">In the News</a></li>
+            
+                      </ul>
+                    </div>
+                    <div class="footer-section " style="margin-left: 300px;">
+                      <h4>Magicstream</h4>
+                      <ul class="list1">
+                        <!-- Magicstream content -->
+                        <li><a href="#">Travelougs</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Alive</a></li>
+                        <li><a href="#">Soul</a></li>
+                        <li><a href="#">Feast</a></li>
+            
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 text-center" >
+                    <h4 style="margin-left: 740px; margin-top: 40px;">Follow Us</h4>
+                    <div class="social-icons text-center">
+                      <a href="#" class="social-icon" style="margin-left: 700px;"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="#" class="back-to-top" style="margin-left: 715px;"><i class="fas fa-chevron-up"></i> Back to Top</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 text-center" style="margin-top: 40px; margin-left: 10px;">
+                    <p>&copy; 2024 Explore India. All Rights Reserved.</p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+            <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+<script>
+            document.getElementById('bookTripBtn').addEventListener('click', async function() {
+                try {
+                  const response = await fetch('/pay', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ amount: 15000 }) // Pass the desired amount here
+                  });
+              
+                  const data = await response.json();
+                  const orderId = data.orderId;
+                  const amount = data.amount;
+                  
+                  const options = {
+                    key: 'rzp_test_bFdGb5XFFZLTmd',
+                    amount: amount,
+                    currency: 'INR',
+                    name: 'exploreindia',
+                    description: 'Trip Booking',
+                    order_id: orderId,
+                    handler: function(response) {
+                      console.log(response);
+                      alert('Payment successful!');
+                    },
+                    prefill: {
+                      name: 'Your Name',
+                      email: 'your@example.com',
+                      contact: '9876543210'
+                    }
+                  };
+              
+                  const razorpayInstance = new Razorpay(options);
+                  razorpayInstance.open();
+                } catch (error) {
+                  console.error(error);
+                  alert('An error occurred while processing the payment. Please try again later.');
+                }
+              });
+
+
+            </script>
+
+<script>
+    // This is "probably" IE9 compatible but will need some fallbacks for IE8
+// - (event listeners, forEach loop)
+
+// wait for the entire page to finish loading
+window.addEventListener('load', function() {
+	
+	// setTimeout to simulate the delay from a real page load
+	setTimeout(lazyLoad, 1000);
+	
+});
+
+function lazyLoad() {
+	var card_images = document.querySelectorAll('.card-image');
+	
+	// loop over each card image
+	card_images.forEach(function(card_image) {
+		var image_url = card_image.getAttribute('data-image-full');
+		var content_image = card_image.querySelector('img');
+		
+		// change the src of the content image to load the new high res photo
+		content_image.src = image_url;
+		
+		// listen for load event when the new photo is finished loading
+		content_image.addEventListener('load', function() {
+			// swap out the visible background image with the new fully downloaded photo
+			card_image.style.backgroundImage = 'url(' + image_url + ')';
+			// add a class to remove the blur filter to smoothly transition the image change
+			card_image.className = card_image.className + ' is-loaded';
+		});
+		
+	});
+	
+}
+
+
+</script>
+
+
+    <script src="/scripts/mp.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slides img');
+    let currentSlide = 0;
+
+    function showSlide() {
+        slides.forEach((slide) => {
+            slide.style.display = 'none';
+        });
+
+        slides[currentSlide].style.display = 'block';
+        currentSlide = (currentSlide + 1) % slides.length;
+    }
+
+    showSlide();
+    setInterval(showSlide, 4000);
+});
+
+    </script>
+</body>
+</html>
